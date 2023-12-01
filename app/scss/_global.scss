@@ -1,0 +1,92 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  color: $default-color;
+  overflow-x: hidden;
+  min-width: 300px;
+}
+body .lock{
+  overflow: hidden;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    margin: 0 15px;
+  }
+
+  li.slick-active {
+    button {
+      background-color: #FFEF35;
+    }
+  }
+
+  button {
+    background: $title-color;
+    border: none;
+    height: 8px;
+    width: 8px;
+    font-size: 0;
+    padding: 0;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+.container-fluid{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.info-email {
+  font-weight: 600;
+  color: $title-color;
+  font-size: 14px;
+  margin-bottom: 22px;
+  padding-left: 30px;
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../img/email.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+
